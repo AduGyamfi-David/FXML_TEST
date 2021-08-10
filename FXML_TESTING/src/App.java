@@ -27,6 +27,7 @@ public class App extends Application {
         // }
 
         Scene scene = new Scene(root, 600, 424);
+        scene.getStylesheets().add(App.class.getResource("example.css").toExternalForm());
 
         stage1.setTitle("WELCOME TO MY FXML TEST APP");
         stage1.setScene(scene);
