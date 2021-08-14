@@ -1,34 +1,159 @@
 root { 
-    display: block;
+	display: block;
 }
+
+#main_page {
+	/* -fx-border-color: #000;
+		border-color: #000;
+
+	-fx-border-style: solid;
+		border-style: solid;
+
+	-fx-border-width: 2px;
+		border-width: 2px; */
+	
+	-fx-background-color: #fff;
+		background-color: #fff;
+}
+
 .label {
-    -fx-font-size: 12px;
-    -fx-font-weight: bold;
-    -fx-text-fill: #333333;
-    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+	-fx-font-size: 12px;
+		font-size: 12px;
+
+	-fx-font-weight: bold;
+		font-weight: bold;
+
+	-fx-text-fill: #333333;
+	-fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
 }
 
-#welcome-text {
-   -fx-font-size: 32px;
-   -fx-font-family: "Arial Black";
-   -fx-fill: #818181;
-   -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+#image_holder {
+	/* -fx-border-color: #000;
+		border-color: #000;
+
+	-fx-border-style: solid;
+		border-style: solid;
+
+	-fx-border-width: 2px;
+		border-width: 2px; */
+
+	-fx-size: 300px;
+		size: 300px;
 }
+
+#java_image {
+	-fx-image: url(assets/java_logo.png);
+}
+
+#title {
+	/* -fx-border-color: #000;
+		border-color: #000;
+
+	-fx-border-style: solid;
+		border-style: solid;
+
+	-fx-border-width: 2px;
+		border-width: 2px;
+ */
+	/* -fx-content-display: center; */
+}
+
+#welcome_text {
+	-fx-font-size: 32px;
+		font-size: 32px;
+
+	-fx-font-family: "Arial Black";
+		font-family: "Arial Black";
+
+
+	-fx-fill: #006a94;
+		fill: #006a94;
+	/* -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 ); */
+}
+
+#username {
+	-fx-border-color: #000;
+		border-color: #000;
+
+	-fx-border-style: solid;
+		border-style: solid;
+
+	-fx-border-width: 0px 0px 1px 0px;
+		border-width: 0px 0px 1px 0px;
+
+	-fx-background-color: inherit;
+		background-color: inherit;
+}
+
+#passwordField {
+	-fx-border-color: #000;
+		border-color: #000;
+
+	-fx-border-style: solid;
+		border-style: solid;
+
+	-fx-border-width: 0px 0px 1px 0px;
+		border-width: 0px 0px 1px 0px;
+
+	-fx-background-color: inherit;
+		background-color: inherit;
+
+}
+
+#cmdSignIn {
+	-fx-background-color: #21a3d5;
+		background-color: #21a3d5;
+
+	-fx-font: #fff 'sans-serif';
+		font: #fff 'sans-serif';
+
+}
+
 #actiontarget {
-  -fx-fill: FIREBRICK;
-  -fx-font-weight: bold;
-  -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );  
+	-fx-fill: #c3223d;
+		fill: #c3223d;
+		
+	-fx-font-weight: bold;
+		font-weight: bold;
+
+	-fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );  
 }
 
-.button {
-    -fx-text-fill: white;
-    -fx-font-family: "Arial Narrow";
-    -fx-font-weight: bold;
-    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
-    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+#cmdSignIn:hover {
+	-fx-effect: dropshadow( gaussian , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
 }
 
-.button:hover {
-    -fx-background-color: #2A5058;
-    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+/* #button_box {
+	-fx-border-color: #00f;
+		border-color: #00f;
+	
+	-fx-border-style: solid;
+		border-style: solid;
+
+	-fx-border-width: 2px;
+		border-width: 2px;
+	
+} */
+
+#tester {
+	-fx-border-color: #f00;
+		border-color: #f00;
+
+	-fx-border-style: solid;
+		border-style: solid;
+
+	-fx-border-width: 2px;
+		border-width: 2px;
+}
+
+#padder {
+	-fx-border-color: #0f0;
+		border-color: #0f0;
+	
+	-fx-border-style: solid;
+		border-style: solid;
+
+	-fx-border-width: 2px;
+		border-width: 2px;
+
 }

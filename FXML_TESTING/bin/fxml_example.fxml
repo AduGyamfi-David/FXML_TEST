@@ -5,41 +5,51 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
-
+<?import javafx.scene.image.*?>
 <GridPane 
+    fx:id="main_page"
     fx:controller="SampleController"
     xmlns:fx="http://javafx.com/fxml"
     alignment="center"
-    hgap="10"
-    vgap="10">
+    hgap="30"
+    vgap="30">
 
     <padding>
-        <Insets top="25" right="25" bottom="10" left="25"/>
+        <Insets fx:id="padder" top="25" right="15" bottom="10" left="15"/>
     </padding>
 
-    <Text text="Welcome" 
-        GridPane.columnIndex="0" GridPane.rowIndex="0"
-        GridPane.columnSpan="2"/>
- 
+    <HBox fx:id="image_holder" alignment="center_left" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.rowSpan="6">
+        <ImageView fx:id="java_image" fitHeight="200" fitWidth="110" preserveRatio="true"/>
+
+    </HBox>
+
+    <HBox fx:id="title"
+        alignment="center" GridPane.columnIndex="1" GridPane.rowIndex="0"
+        GridPane.columnSpan="2">
+
+        <Text text="Welcome!" fx:id="welcome_text"/>
+
+    </HBox>
+
     <Label text="User Name:"
-        GridPane.columnIndex="0" GridPane.rowIndex="1"/>
- 
-    <TextField 
         GridPane.columnIndex="1" GridPane.rowIndex="1"/>
  
+    <TextField fx:id="username"
+        GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+ 
     <Label text="Password:"
-        GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        GridPane.columnIndex="1" GridPane.rowIndex="2"/>
  
     <PasswordField fx:id="passwordField" 
-        GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+        GridPane.columnIndex="2" GridPane.rowIndex="2"/>
 
-    <HBox spacing="10" alignment="bottom_right" 
-        GridPane.columnIndex="1" GridPane.rowIndex="4">
-        <Button text="Sign In"     
-        onAction="#handleSubmitButtonAction"/>
+    <HBox fx:id="button_box" spacing="0" alignment="bottom_left" GridPane.columnIndex="2" GridPane.rowIndex="4">
+
+        <Button text="Sign In" fx:id="cmdSignIn" onAction="#handleSubmitButtonAction"/>
+        
     </HBox>
 
     <Text fx:id="actiontarget"
-       GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+        GridPane.columnIndex="2" GridPane.rowIndex="6"/>
 
 </GridPane>

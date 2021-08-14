@@ -18,13 +18,8 @@ public class App extends Application {
     @Override
 
     public void start(Stage stage1) throws Exception {
-        // Parent root;
-        // try {
+
         Parent root = FXMLLoader.load(getClass().getResource("fxml_example.fxml"));
-        // } catch (Exception e) {
-        //     //TODO: handle exception
-        //     e.printStackTrace();
-        // }
 
         Scene scene = new Scene(root, 600, 424);
         scene.getStylesheets().add(App.class.getResource("example.css").toExternalForm());
