@@ -3,15 +3,7 @@ root {
 }
 
 #main_page {
-	/* -fx-border-color: #000;
-		border-color: #000;
 
-	-fx-border-style: solid;
-		border-style: solid;
-
-	-fx-border-width: 2px;
-		border-width: 2px; */
-	
 	-fx-background-color: #fff;
 		background-color: #fff;
 }
@@ -28,34 +20,12 @@ root {
 }
 
 #image_holder {
-	/* -fx-border-color: #000;
-		border-color: #000;
-
-	-fx-border-style: solid;
-		border-style: solid;
-
-	-fx-border-width: 2px;
-		border-width: 2px; */
-
 	-fx-size: 300px;
 		size: 300px;
 }
 
 #java_image {
 	-fx-image: url(assets/java_logo.png);
-}
-
-#title {
-	/* -fx-border-color: #000;
-		border-color: #000;
-
-	-fx-border-style: solid;
-		border-style: solid;
-
-	-fx-border-width: 2px;
-		border-width: 2px;
- */
-	/* -fx-content-display: center; */
 }
 
 #welcome_text {
@@ -68,10 +38,11 @@ root {
 
 	-fx-fill: #006a94;
 		fill: #006a94;
-	/* -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 ); */
+	
 }
 
-#username {
+#username_box {
+
 	-fx-border-color: #000;
 		border-color: #000;
 
@@ -81,23 +52,49 @@ root {
 	-fx-border-width: 0px 0px 1px 0px;
 		border-width: 0px 0px 1px 0px;
 
+	-fx-background-color: #fff;
+		background-color: #fff;
+
+}
+
+#usernameField {
 	-fx-background-color: inherit;
 		background-color: inherit;
+
+}
+
+#username_image {
+	-fx-image: url(assets/user-solid.png)
+	/* 
+	* LINK TO LICENSE: https://fontawesome.com/license
+	*/
+}
+
+#password_box {
+	-fx-border-color: #000;
+		border-color: #000;
+
+	-fx-border-style: solid;
+		border-style: solid;
+
+	-fx-border-width: 0px 0px 1px 0px;
+		border-width: 0px 0px 1px 0px;
+
+	-fx-background-color: #fff;
+		background-color: #fff;
+}
+
+#password_image {
+	-fx-image: url(assets/lock-solid.png)
+	/* 
+	* LINK TO LICENSE: https://fontawesome.com/license
+	*/
+
 }
 
 #passwordField {
-	-fx-border-color: #000;
-		border-color: #000;
-
-	-fx-border-style: solid;
-		border-style: solid;
-
-	-fx-border-width: 0px 0px 1px 0px;
-		border-width: 0px 0px 1px 0px;
-
 	-fx-background-color: inherit;
 		background-color: inherit;
-
 }
 
 #cmdSignIn {
@@ -106,6 +103,9 @@ root {
 
 	-fx-font: #fff 'sans-serif';
 		font: #fff 'sans-serif';
+
+	-fx-padding: 10px 15px;
+		padding: 10px 15px;
 
 }
 
@@ -121,39 +121,4 @@ root {
 
 #cmdSignIn:hover {
 	-fx-effect: dropshadow( gaussian , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
-}
-
-/* #button_box {
-	-fx-border-color: #00f;
-		border-color: #00f;
-	
-	-fx-border-style: solid;
-		border-style: solid;
-
-	-fx-border-width: 2px;
-		border-width: 2px;
-	
-} */
-
-#tester {
-	-fx-border-color: #f00;
-		border-color: #f00;
-
-	-fx-border-style: solid;
-		border-style: solid;
-
-	-fx-border-width: 2px;
-		border-width: 2px;
-}
-
-#padder {
-	-fx-border-color: #0f0;
-		border-color: #0f0;
-	
-	-fx-border-style: solid;
-		border-style: solid;
-
-	-fx-border-width: 2px;
-		border-width: 2px;
-
 }

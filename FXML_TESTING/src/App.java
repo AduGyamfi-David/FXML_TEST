@@ -30,3 +30,10 @@ public class App extends Application {
 
     }
 }
+
+/* 
+! WHAT DID WE LEARN:
+    * App class handles running of program, setting "scene" and windows, and calling resources.
+    * Use a controller class to handle events from FXML elements.
+    * css for FXML is slightly limited in comparison to CSS for web dev.
+*/

@@ -1,12 +1,15 @@
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.text.Text;
+import javafx.stage.Stage;
+import javafx.scene.control.*;
 
 public class SampleController {
-    @FXML private Text actiontarget;
+    @FXML private Button cmdSignIn;
     
     @FXML protected void handleSubmitButtonAction(ActionEvent event) {
-        actiontarget.setText("Sign in button pressed");
+        Stage stage = (Stage) cmdSignIn.getScene().getWindow();
+        
+        stage.close();
     }
 
 }

@@ -6,12 +6,14 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+
 <GridPane 
     fx:id="main_page"
     fx:controller="SampleController"
     xmlns:fx="http://javafx.com/fxml"
     alignment="center"
-    hgap="30"
+    hgap="60"
     vgap="30">
 
     <padding>
@@ -21,6 +23,9 @@
     <HBox fx:id="image_holder" alignment="center_left" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.rowSpan="6">
         <ImageView fx:id="java_image" fitHeight="200" fitWidth="110" preserveRatio="true"/>
 
+        <padding>
+            <Insets top="0" right="60" bottom="0" left="5"/>
+        </padding>    
     </HBox>
 
     <HBox fx:id="title"
@@ -31,25 +36,32 @@
 
     </HBox>
 
-    <Label text="User Name:"
-        GridPane.columnIndex="1" GridPane.rowIndex="1"/>
- 
-    <TextField fx:id="username"
-        GridPane.columnIndex="2" GridPane.rowIndex="1"/>
- 
-    <Label text="Password:"
-        GridPane.columnIndex="1" GridPane.rowIndex="2"/>
- 
-    <PasswordField fx:id="passwordField" 
-        GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+    <HBox fx:id="username_box" spacing="10" alignment="center" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.columnSpan="2">
 
-    <HBox fx:id="button_box" spacing="0" alignment="bottom_left" GridPane.columnIndex="2" GridPane.rowIndex="4">
+        <ImageView fx:id="username_image" fitHeight="18" fitWidth="18" preserveRatio="true"/>
+
+        <TextField fx:id="usernameField">
+
+            <promptText>Username</promptText>
+
+        </TextField>
+    </HBox>
+
+    <HBox fx:id="password_box" spacing="10" alignment="center" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.columnSpan="2">
+
+        <ImageView fx:id="password_image" fitHeight="18" fitWidth="18" preserveRatio="true"/>
+
+        <PasswordField fx:id="passwordField">
+            <promptText>Password</promptText>
+        </PasswordField>
+
+    </HBox> 
+
+    <HBox fx:id="button_box" spacing="0" alignment="bottom_left" GridPane.columnIndex="1" GridPane.rowIndex="4" GridPane.columnSpan="2">
 
         <Button text="Sign In" fx:id="cmdSignIn" onAction="#handleSubmitButtonAction"/>
         
     </HBox>
 
-    <Text fx:id="actiontarget"
-        GridPane.columnIndex="2" GridPane.rowIndex="6"/>
-
+    
 </GridPane>
